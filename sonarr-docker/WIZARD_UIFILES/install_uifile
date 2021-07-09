@@ -1,0 +1,34 @@
+[{
+    "step_title": "PUID and PGID configuration",
+    "items": [{
+        "type": "textfield",
+        "desc": "Enter your Process User ID",
+        "subitems": [{
+            "key": "WIZARD_PUID",
+            "desc": "PUID",
+            "defaultValue": "1027",
+            "validator": {
+                "allowBlank": false,
+                "regex": {
+                    "expr": "/^[0-9]+$/",
+                    "errorText": "Enter a numeric ID."
+                }
+            }
+        }]
+    }, {
+        "type": "textfield",
+        "desc": "Enter your Process Group ID",
+        "subitems": [{
+            "key": "WIZARD_PGID",
+            "desc": "PGID",
+            "defaultValue": "100",
+            "validator": {
+                "allowBlank": false,
+                "regex": {
+                    "expr": "/^[0-9]+$/",
+                    "errorText": "Enter a numeric ID."
+                }
+            }
+        }]
+    }]
+}]
